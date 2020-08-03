@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+body {
+    font-family: 'Roboto Mono', monospace;
+    color: rgb(32, 28, 31);
+    background: rgb(243, 237, 237);
+    margin: 0;
+}
+a {
+    color: rgb(141, 7, 7);
+    text-decoration: none;
+}
+a:hover {
+    color: rgb(206, 12, 12);
+    text-decoration ;
+}
+
+nav#navbar{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background: rgb(243, 237, 237);
+}
+ul {
+    list-style: none;
+    display: flex;
+    float: right;
+    margin: 0;
+    padding: 0;
+}
+li {
+    margin:0 20px;
+    line-height: 3;
+}
+.welcome-section {
+  display: flex;
+  padding: 30px 0;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+  height: 100vh;
+  background-color: #191111;
+  color: #fff;
+
+}
+article img {
+  width: 70%;
+  padding-left: 15px;
+  text-align: center;
+}
+article#titulo {
+  text-align:right;
+}
+article#titulo h1{
+  text-decoration:overline;
+}
+section#acercademi {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding:0 50px;
+  border-bottom:#171717 solid;
+}
+section#projects {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding:0 50px;
+    background: #191111;
+    color: #fff;
+    text-align: center;
+    border-bottom:#171717 solid;
+}
+
+.projects-grid{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 40px;
+    margin-top: 30px;
+ }
+ img.project-image {
+     max-width: 360px;
+ }
+ .projects-grid a {
+   color: #fff;
+ }
+ .projects-grid a:hover {
+    color: rgb(224, 50, 50);
+  }
+ section#contact {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding:0 50px;
+  border-bottom:#171717 solid;
+}
+.contact-links {
+  font-size:23px;
+
+}
+footer p {
+  text-align:center;
+}
+@media (max-width: 620px) {
+  .welcome-section {
+   flex-direction: column;
+  }
+  .projects-grid{
+    display: flex;
+flex-direction: column;
+  
+ }
+ article img {
+   width:100%;
+   padding: 0;
+ }
+ section#projects {
+   height:auto;
+ }
+ li {
+    margin: 10px 20px;
+    line-height: 1.1;
+}
+
+}
